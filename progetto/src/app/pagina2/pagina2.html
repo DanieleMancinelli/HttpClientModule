@@ -1,0 +1,13 @@
+<h3>{{ data?.name }}</h3>
+
+<p>Magnitude: {{ data?.absolute_magnitude_h }}</p>
+
+<p>Hazardous: {{ data?.is_potentially_hazardous_asteroid }}</p>
+
+<p>JPL link:</p>
+<a [href]="data?.nasa_jpl_url" target="_blank">{{ data?.nasa_jpl_url }}</a>
+
+
+<h5 class="mt-3">Estimated diameter (km)</h5>
+<p>min: {{ data?.estimated_diameter?.kilometers?.estimated_diameter_min }}</p>
+<p>max: {{ data?.estimated_diameter?.kilometers?.estimated_diameter_max }}</p>
